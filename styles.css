@@ -1108,3 +1108,77 @@ section {
     gap: 24px
   }
 }
+/* ===== Mobile responsive patch ===== */
+:root{
+  --page-pad: 72px;
+}
+body{ overflow-x:hidden; }
+img, svg{ max-width:100%; height:auto; }
+
+/* global container spacing */
+section{ padding-left:var(--page-pad); padding-right:var(--page-pad); }
+
+@media (max-width: 960px){
+  :root{ --page-pad: 24px; }
+
+  /* nav */
+  .nav{ padding:14px 18px; }
+  .nav-links{ gap:14px; }
+  .nav-links a{ font-size:12px; letter-spacing:.12em; }
+  .lang-toggle{ transform:scale(.95); }
+
+  /* hero layout: stack */
+  .hero{
+    min-height: unset;
+    padding-top: 96px;
+    padding-bottom: 56px;
+  }
+  .hero-left, .hero-right{ width:100%; }
+  .hero-title{ font-size: clamp(48px, 9vw, 72px); line-height:1.05; }
+  .hero-right{ margin-top: 28px; }
+  .map-frame{ width:100%; max-width:520px; margin:0 auto; }
+
+  /* purpose / sections */
+  .section-title{ font-size: clamp(26px, 5.5vw, 36px); }
+  .purpose-deck{ font-size: clamp(18px, 4.2vw, 24px); }
+
+  /* sticky rail -> horizontal scroll */
+  .rail-sticky{ position: sticky; top: 64px; z-index: 20; }
+  .rail{
+    overflow-x:auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 18px;
+    padding: 10px 6px;
+    border-radius: 14px;
+  }
+  .rail-node{ min-width: 120px; flex: 0 0 auto; }
+
+  /* modules/cards */
+  .module{ padding: 28px 18px; }
+  .mod-header{ grid-template-columns: 1fr; row-gap: 8px; }
+  .subtabs{ flex-wrap:wrap; gap:10px; }
+
+  /* highlights: 2-col -> 1-col */
+  #highlights > div[style*="grid-template-columns:1fr 1fr"]{
+    grid-template-columns: 1fr !important;
+  }
+  .hl-scroller{
+    overflow-x:auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+  .hl-card{ min-width: 260px; }
+
+  /* visits cards */
+  .vc-head{ grid-template-columns: 1fr auto; row-gap: 10px; }
+  .vc-status{ justify-self:start; }
+
+  /* closing stepper */
+  .stepper{ gap:12px; }
+}
+
+@media (max-width: 420px){
+  :root{ --page-pad: 16px; }
+  .nav-links a{ display:none; } /* keep header clean */
+  .nav{ justify-content:space-between; }
+}
