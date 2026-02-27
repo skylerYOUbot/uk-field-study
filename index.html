@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Field Study, Evidence, Decision.</title>
+    <meta name="description" content="UK Demi-fine Jewelry Field Study — Mar 15–29, 2026" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-brand">Field Study</div>
+        <div class="nav-links">
+            <a href="#purpose" data-en="Purpose" data-zh="目的">Purpose</a>
+            <a href="#plan" data-en="Plan" data-zh="执行计划">Plan</a>
+            <a href="#highlights" data-en="Highlights" data-zh="要点">Highlights</a>
+            <a href="#visits" data-en="Visits" data-zh="访谈">Visits</a>
+            <button class="lang-toggle" id="langToggle">中</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-left">
+            <div class="hero-tag" data-en="UK Field Study" data-zh="英国实地考察">UK Field Study</div>
+            <h1 class="hero-title"
+                data-en="<span class='uk-highlight'>UK</span> Field Study,<br><em>Evidence</em>,<br>Decision."
+                data-zh="<span class='uk-highlight'>UK</span> 考察、<br><em>证据</em>、<br>决策。"><span
+                    class="uk-highlight">UK</span> Field Study,<br><em>Evidence</em>,<br>Decision.</h1>
+            <div class="hero-meta">
+                <div class="hm-line">Mar 15–29, 2026</div>
+                <div class="hm-line hm-loc" data-pin="lnd" data-en="London (Primary)" data-zh="伦敦（主力）">London (Primary)
+                </div>
+                <div class="hm-line hm-loc" data-pin="bhm" data-en="Birmingham (Optional)" data-zh="伯明翰（可选）">Birmingham
+                    (Optional)</div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="map-frame">
+                <svg class="uk-mesh" viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <clipPath id="ukC">
+                            <path
+                                d="M100,16 L112,10 L124,16 L132,28 L140,20 L148,28 L152,40 L144,52 L136,64 L128,72 L136,84 L148,96 L160,108 L168,124 L172,144 L168,164 L160,180 L164,192 L156,204 L148,216 L136,228 L124,236 L110,244 L96,252 L84,260 L72,256 L64,244 L56,232 L48,216 L44,200 L36,184 L32,164 L36,144 L44,128 L52,112 L48,96 L56,80 L64,64 L72,48 L84,32 L92,20 Z" />
+                        </clipPath>
+                        <filter id="pinGlow">
+                            <feGaussianBlur stdDeviation="2.5" result="b" />
+                            <feMerge>
+                                <feMergeNode in="b" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                        <filter id="pinGlowHover">
+                            <feGaussianBlur stdDeviation="4.5" result="b" />
+                            <feMerge>
+                                <feMergeNode in="b" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Sparse vertical lines clipped to UK shape -->
+                    <g clip-path="url(#ukC)" opacity=".18">
+                        <line x1="88" y1="0" x2="88" y2="320" stroke="#999" stroke-width=".4" />
+                        <line x1="96" y1="0" x2="96" y2="320" stroke="#999" stroke-width=".4" />
+                        <line x1="104" y1="0" x2="104" y2="320" stroke="#999" stroke-width=".4" />
+                        <line x1="112" y1="0" x2="112" y2="320" stroke="#999" stroke-width=".4" />
+                        <line x1="120" y1="0" x2="120" y2="320" stroke="#999" stroke-width=".4" />
+                    </g>
+                    <!-- UK outline — thin, light gray -->
+                    <path
+                        d="M100,16 L112,10 L124,16 L132,28 L140,20 L148,28 L152,40 L144,52 L136,64 L128,72 L136,84 L148,96 L160,108 L168,124 L172,144 L168,164 L160,180 L164,192 L156,204 L148,216 L136,228 L124,236 L110,244 L96,252 L84,260 L72,256 L64,244 L56,232 L48,216 L44,200 L36,184 L32,164 L36,144 L44,128 L52,112 L48,96 L56,80 L64,64 L72,48 L84,32 L92,20 Z"
+                        fill="none" stroke="#BCBCBC" stroke-width=".6" />
+                    <!-- Pins: blue rings (hollow) + glow always-on -->
+                    <circle id="pin-bhm" class="map-dot" cx="112" cy="164" r="5" fill="none" stroke="#1F33FF"
+                        stroke-width="1.8" filter="url(#pinGlow)" style="transition:all .35s ease" />
+                    <circle id="pin-bhm-dot" cx="112" cy="164" r="1.2" fill="#1F33FF" />
+                    <circle id="pin-lnd" class="map-dot" cx="148" cy="208" r="6" fill="none" stroke="#1F33FF"
+                        stroke-width="1.8" filter="url(#pinGlow)" style="transition:all .35s ease" />
+                    <circle id="pin-lnd-dot" cx="148" cy="208" r="1.5" fill="#1F33FF" />
+                </svg>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke-linecap="square" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- PURPOSE -->
+    <section id="purpose">
+        <div class="section-label" data-en="Decision Anchor" data-zh="决策锚点">Decision Anchor</div>
+        <div class="purpose-deck"
+            data-en="Determine whether <span class='accent-phrase'>UK demi-fine jewelry</span> is viable for structured market entry within 6–12 months."
+            data-zh="确定<span class='accent-phrase'>英国轻奢珠宝</span>是否适合在6-12个月内进行结构化市场进入。">
+            Determine whether <span class="accent-phrase">UK demi-fine jewelry</span> is viable for structured market
+            entry within 6–12 months.
+        </div>
+        <div class="purpose-output">
+            <div data-en="Output:" data-zh="输出:">Output:</div>
+            <span data-en="Go / Lean Test / No-Go" data-zh="执行 / 精益测试 / 不执行">Go / Lean Test / No-Go</span>
+            <div style="margin-top:18px;font-size:clamp(16px,1.6vw,20px);letter-spacing:.02em"
+                data-en="Evidence-backed recommendation." data-zh="由证据支撑的建议。">Evidence-backed recommendation.</div>
+        </div>
+    </section>
+
+    <!-- PLAN -->
+    <section id="plan" style="padding-top:20px">
+        <div class="section-label" data-en="Execution Plan" data-zh="执行计划">Execution Plan</div>
+        <h2 class="section-title" data-en="Core Objectives" data-zh="核心目标">Core Objectives</h2>
+
+        <!-- STICKY RAIL -->
+        <div class="rail-sticky">
+            <div class="rail">
+                <div class="rail-node active" data-target="mod-1">
+                    <span class="rail-icon"><svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="3" fill="currentColor" />
+                        </svg></span>
+                    <span class="rail-label" data-en="Market" data-zh="市场">Market</span>
+                </div>
+                <div class="rail-node" data-target="mod-2">
+                    <span class="rail-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 2L22 12 12 22 2 12Z" />
+                            <circle cx="12" cy="12" r="2" fill="currentColor" />
+                        </svg></span>
+                    <span class="rail-label" data-en="Product Dev" data-zh="产品开发">Product Dev</span>
+                </div>
+                <div class="rail-node" data-target="mod-3">
+                    <span class="rail-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 2L3 6V11C3 16 7 20 12 22C17 20 21 16 21 11V6L12 2Z" />
+                            <path d="M9 12L11 14L15 10" />
+                        </svg></span>
+                    <span class="rail-label" data-en="Compliance" data-zh="合规">Compliance</span>
+                </div>
+                <div class="rail-node" data-target="mod-4">
+                    <span class="rail-icon"><svg viewBox="0 0 24 24">
+                            <rect x="2" y="5" width="16" height="11" rx="2" />
+                            <path d="M18 9h4v7h-4M6 16v3M14 16v3" />
+                        </svg></span>
+                    <span class="rail-label" data-en="Fulfillment" data-zh="履约">Fulfillment</span>
+                </div>
+                <div class="rail-node" data-target="mod-5">
+                    <span class="rail-icon"><svg viewBox="0 0 24 24">
+                            <path d="M4 10v10h16V10M2 10l10-7 10 7M10 20v-6h4v6" />
+                        </svg></span>
+                    <span class="rail-label" data-en="Warehouse" data-zh="仓储">Warehouse</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODULE 1: MARKET -->
+        <div class="module" id="mod-1">
+            <div class="mod-header">
+                <div class="mod-num">01</div>
+                <div class="mod-title" data-en="Market Positioning" data-zh="市场定位">Market Positioning</div>
+                <div class="mod-subtitle" data-en="Convertibility Gap" data-zh="转化率缺口">Convertibility Gap</div>
+            </div>
+            <div class="subtabs">
+                <button class="subtab active" data-panel="m1-store" data-en="Store Visits" data-zh="店铺走访">Store
+                    Visits</button>
+                <button class="subtab" data-panel="m1-trade" data-en="Trade Show" data-zh="展会">Trade Show</button>
+            </div>
+
+            <div class="subpanel active" id="m1-store">
+                <div class="sp-obj" data-en="Benchmark DTC retail experience and conversion mechanisms."
+                    data-zh="对齐 DTC 零售体验及转化机制。">Benchmark DTC retail experience and conversion mechanisms.</div>
+                <div class="sp-test">
+                    <label data-en="Questions to test" data-zh="测试问题">Questions to test</label>
+                    <ul>
+                        <li data-en="How is price ladder communicated?" data-zh="价格阶梯如何传达？">How is price ladder
+                            communicated?</li>
+                        <li data-en="What are the post-purchase retention hooks?" data-zh="购买后的留存抓手为何？">What are the
+                            post-purchase retention hooks?</li>
+                    </ul>
+                </div>
+                <!-- Hidden until expanded or visible inside -->
+                <div class="sp-out">
+                    <label data-en="Output" data-zh="产出">Output</label>
+                    <span data-en="DTC Experience Checklist" data-zh="DTC体验清单">DTC Experience Checklist</span>
+                </div>
+                <div class="sp-ev">
+                    <div class="sp-ev-box"
+                        onclick="openLightbox('Photos of key touchpoints.jpg','Photos of Key Touchpoints','Store visit visual evidence.')"
+                        style="cursor:pointer">
+                        <img src="Photos of key touchpoints.jpg" alt="Key touchpoints"
+                            style="width:100%;border-radius:4px;margin-bottom:8px" />
+                        <div data-en="Photos of key touchpoints" data-zh="关键触点照片">Photos of key touchpoints</div>
+                    </div>
+                    <div class="sp-ev-box"
+                        onclick="openLightbox('Store-to-ecom linkage maps.jpg','Store-to-Ecom Linkage Maps','Conversion flow mapping.')"
+                        style="cursor:pointer">
+                        <img src="Store-to-ecom linkage maps.jpg" alt="Linkage maps"
+                            style="width:100%;border-radius:4px;margin-bottom:8px" />
+                        <div data-en="Store-to-ecom linkage maps" data-zh="店铺电商联动图示">Store-to-ecom linkage maps</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpanel" id="m1-trade">
+                <div class="sp-obj"
+                    data-en="Capture verifiable market signals and supplier leads at core industry venue."
+                    data-zh="在核心行业展会捕获可复核的市场信号及供应商线索。">Capture verifiable market signals and supplier leads at core
+                    industry venue.</div>
+                <div class="sp-test">
+                    <label data-en="What we look for" data-zh="我们寻找什么">What we look for</label>
+                    <ul>
+                        <li data-en="Sustainability and material trends" data-zh="可持续性与材料趋势">Sustainability and material
+                            trends</li>
+                        <li data-en="Exhibitor brand positioning strategies" data-zh="参展商的品牌定位策略">Exhibitor brand
+                            positioning strategies</li>
+                    </ul>
+                </div>
+                <div class="sp-out">
+                    <label data-en="Output" data-zh="产出">Output</label>
+                    <span data-en="Festival Signal Log & Ecosystem Map" data-zh="展会信号日志与生态图">Festival Signal Log &
+                        Ecosystem Map</span>
+                </div>
+                <a href="#highlights" class="pill-link" data-en="See Festival →" data-zh="查看展会 →">See Festival →</a>
+            </div>
+        </div>
+
+        <!-- MODULE 2: PRODUCT DEV -->
+        <div class="module" id="mod-2">
+            <div class="mod-header">
+                <div class="mod-num">02</div>
+                <div class="mod-title" data-en="Product Development" data-zh="产品开发">Product Development</div>
+                <div class="mod-subtitle" data-en="Partnership Models" data-zh="合作模式">Partnership Models</div>
+            </div>
+            <div class="subtabs">
+                <button class="subtab active" data-panel="m2-bham" data-en="Heritage & Makers" data-zh="传承与工匠">Heritage
+                    & Makers</button>
+            </div>
+            <div class="subpanel active" id="m2-bham">
+                <div class="sp-obj"
+                    data-en="Build connections with designers/makers and validate collaboration feasibility."
+                    data-zh="与设计师/工匠建立联系并验证协作可行性。">Build connections with designers/makers and validate collaboration
+                    feasibility.</div>
+                <div class="sp-test">
+                    <label data-en="What we test" data-zh="测试内容">What we test</label>
+                    <ul>
+                        <li data-en="Collaboration models (capsule/co-design)" data-zh="协作模式（胶囊系列/联合设计）">Collaboration
+                            models (capsule/co-design)</li>
+                        <li data-en="MOQ, lead time, and cost bands" data-zh="起订量、交货时间与成本范围">MOQ, lead time, and cost
+                            bands</li>
+                    </ul>
+                </div>
+                <div class="sp-out">
+                    <label data-en="Output" data-zh="产出">Output</label>
+                    <span data-en="Partner Shortlist + IP Options" data-zh="合作伙伴短名单+知识产权选项">Partner Shortlist + IP
+                        Options</span>
+                </div>
+                <a href="#highlights" class="pill-link" data-en="See Jewellery Quarter →" data-zh="查看珠宝区 →">See
+                    Jewellery Quarter →</a>
+            </div>
+        </div>
+
+        <!-- MODULE 3: COMPLIANCE -->
+        <div class="module" id="mod-3">
+            <div class="mod-header">
+                <div class="mod-num">03</div>
+                <div class="mod-title" data-en="Product Compliance" data-zh="产品合规">Product Compliance</div>
+                <div class="mod-subtitle" data-en="Execution Path" data-zh="执行路径">Execution Path</div>
+            </div>
+            <div class="subtabs">
+                <button class="subtab active" data-panel="m3-exec" data-en="Path & Thresholds" data-zh="路径与阈值">Path &
+                    Thresholds</button>
+            </div>
+            <div class="subpanel active" id="m3-exec">
+                <div class="sp-obj" data-en="Map end-to-end compliance workflow and thresholds for UK sale."
+                    data-zh="绘制端到端的英国销售合规流程及阈值。">Map end-to-end compliance workflow and thresholds for UK sale.</div>
+                <div class="sp-test">
+                    <label data-en="What we test" data-zh="测试内容">What we test</label>
+                    <ul>
+                        <li data-en="Labeling/marking requirements + hallmarking" data-zh="标签标识要求及金属成色印记">
+                            Labeling/marking requirements + hallmarking</li>
+                        <li data-en="Claims boundaries (what we cannot say)" data-zh="声明边界（我们不能说什么）">Claims boundaries
+                            (what we cannot say)</li>
+                    </ul>
+                </div>
+                <div class="sp-out">
+                    <label data-en="Output" data-zh="产出">Output</label>
+                    <span data-en="Compliance Gate R/A/G" data-zh="合规门禁 R/A/G">Compliance Gate R/A/G</span>
+                </div>
+                <a href="#highlights" class="pill-link" data-en="See Assurance Notes →" data-zh="查看保证要求 →">See Assurance
+                    Notes →</a>
+            </div>
+        </div>
+
+        <!-- MODULE 4: FULFILLMENT -->
+        <div class="module" id="mod-4">
+            <div class="mod-header">
+                <div class="mod-num">04</div>
+                <div class="mod-title" data-en="Fulfillment Routing" data-zh="履约路由">Fulfillment Routing</div>
+                <div class="mod-subtitle" data-en="Delivery & Returns" data-zh="配送与退货">Delivery & Returns</div>
+            </div>
+            <div class="subtabs">
+                <button class="subtab active" data-panel="m4-deliv" data-en="Logistics SLA" data-zh="物流SLA">Logistics
+                    SLA</button>
+            </div>
+            <div class="subpanel active" id="m4-deliv">
+                <div class="sp-obj"
+                    data-en="Validate delivery and return experience is controllable and cost-effective."
+                    data-zh="验证配送与退货体验的成本可控性与体验可控性。">Validate delivery and return experience is controllable and
+                    cost-effective.</div>
+                <div class="sp-test">
+                    <label data-en="What we test" data-zh="测试内容">What we test</label>
+                    <ul>
+                        <li data-en="Jewelry insured shipping pipelines" data-zh="珠宝的保价运输管道">Jewelry insured shipping
+                            pipelines</li>
+                        <li data-en="Return risk scaling and fraud controls" data-zh="退货风险扩散及欺诈控制">Return risk scaling
+                            and fraud controls</li>
+                    </ul>
+                </div>
+                <div class="sp-out">
+                    <label data-en="Output" data-zh="产出">Output</label>
+                    <span data-en="Fulfillment Flow options" data-zh="履约流程选项">Fulfillment Flow options</span>
+                </div>
+                <a href="#visits" class="pill-link" data-en="See Logistics scope →" data-zh="查看物流计划 →">See Logistics
+                    scope →</a>
+            </div>
+        </div>
+
+        <!-- MODULE 5: WAREHOUSE -->
+        <div class="module" id="mod-5">
+            <div class="mod-header">
+                <div class="mod-num">05</div>
+                <div class="mod-title" data-en="Warehouse Security" data-zh="仓储安全">Warehouse Security</div>
+                <div class="mod-subtitle" data-en="Control Audit" data-zh="安全内控">Control Audit</div>
+            </div>
+            <div class="subtabs">
+                <button class="subtab active" data-panel="m5-sf" data-en="SF Express (London)" data-zh="顺丰（伦敦）">SF
+                    Express (London)</button>
+                <button class="subtab" data-panel="m5-gc" data-en="Barn (Birmingham)" data-zh="谷仓（伯明翰）">Barn
+                    (Birmingham)</button>
+            </div>
+            <div class="subpanel active" id="m5-sf">
+                <div class="sp-obj"
+                    data-en="Audit high-value item segregation and CCTV coverage in SF Heathrow operations."
+                    data-zh="核查顺丰希思罗运营的高价值物品隔离与监控覆盖率。">Audit high-value item segregation and CCTV coverage in SF
+                    Heathrow operations.</div>
+                <div class="sp-test">
+                    <label data-en="What we test" data-zh="测试内容">What we test</label>
+                    <ul>
+                        <li data-en="Locked cage access protocols" data-zh="密闭锁笼的访问协议">Locked cage access protocols</li>
+                        <li data-en="Inventory counting frequency & handling" data-zh="库存盘点频率与处理方案">Inventory counting
+                            frequency & handling</li>
+                    </ul>
+                </div>
+
+                <div class="sp-out">
+                    <label data-en="Output" data-zh="产出">Output</label>
+                    <span data-en="Security Audit pass/fail" data-zh="安全审计通过/未通过">Security Audit pass/fail</span>
+                </div>
+            </div>
+            <div class="subpanel" id="m5-gc">
+                <div class="sp-obj" data-en="Audit Barn's internal flow mapping and Shopify/WMS integration reality."
+                    data-zh="审核谷仓内部动线规划与Shopify/WMS集成的落地现实。">Audit Barn's internal flow mapping and Shopify/WMS
+                    integration reality.</div>
+                <div class="sp-test">
+                    <label data-en="What we test" data-zh="测试内容">What we test</label>
+                    <ul>
+                        <li data-en="Small jewelry pick-pack routing" data-zh="小饰品分拣打包动线">Small jewelry pick-pack
+                            routing</li>
+                        <li data-en="Liability boundaries for miscounts" data-zh="盘点差异的责任界限">Liability boundaries for
+                            miscounts</li>
+                    </ul>
+                </div>
+                <div class="sp-out">
+                    <label data-en="Output" data-zh="产出">Output</label>
+                    <span data-en="WMS flow map assessment" data-zh="WMS动线地图评估">WMS flow map assessment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section id="highlights">
+        <div class="section-label" data-en="Key Events & Visual Evidence" data-zh="核心事件与视觉证据">Key Events & Visual
+            Evidence</div>
+        <h2 class="section-title" data-en="Highlights" data-zh="要点">Highlights</h2>
+
+        <!-- Festival Detail Card -->
+        <div
+            style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:rgba(255,255,255,.4);margin-bottom:48px;overflow:hidden">
+            <div style="min-height:340px;overflow:hidden"><img src="festival.png" alt="Retail Jeweller Festival"
+                    style="width:100%;height:100%;object-fit:cover" /></div>
+            <div style="padding:40px;display:flex;flex-direction:column;justify-content:center">
+                <div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px"
+                    data-en="Key Event" data-zh="核心事件">Key Event</div>
+                <h3 style="font-family:var(--serif);font-size:28px;font-weight:500;font-style:italic;margin-bottom:8px"
+                    data-en="Retail Jeweller Festival" data-zh="零售珠宝商节">Retail Jeweller Festival</h3>
+                <div
+                    style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);margin-bottom:16px">
+                    Mar 16–17, 2026 · London</div>
+                <p style="font-size:13px;line-height:1.75;color:var(--sub);margin-bottom:12px;max-width:400px"
+                    data-en="UK jewelry industry's core trade show & networking venue: concentrated, verifiable market signals and supplier leads."
+                    data-zh="UK 珠宝行业核心展会与社交场域：集中获取可复核的市场信号与供应商线索。">UK jewelry industry's core trade show & networking
+                    venue: concentrated, verifiable market signals and supplier leads.</p>
+                <p style="font-size:13px;line-height:1.75;color:var(--sub);margin-bottom:16px;max-width:400px"
+                    data-en="Agenda covers sustainability / trends / branding / CX — directly serves our evidence collection & decision."
+                    data-zh="议程覆盖 sustainability / trends / branding / CX → 直接服务本次证据采集与决策。">Agenda covers sustainability
+                    / trends / branding / CX — directly serves our evidence collection & decision.</p>
+                <div style="margin-bottom:20px">
+                    <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--sub);margin-bottom:6px"
+                        data-en="What We Take Away" data-zh="我们要带走什么">What We Take Away</div>
+                    <ul style="list-style:none;padding:0">
+                        <li style="font-size:13px;padding:4px 0;color:var(--text)" data-en="→ Festival Signal Log"
+                            data-zh="→ 展会信号日志">→ Festival Signal Log</li>
+                        <li style="font-size:13px;padding:4px 0;color:var(--text)"
+                            data-en="→ Leads Shortlist (cards + follow-up)" data-zh="→ 线索名单（名片+跟进）">→ Leads Shortlist
+                            (cards + follow-up)</li>
+                        <li style="font-size:13px;padding:4px 0;color:var(--text)" data-en="→ Supplier / Ecosystem Map"
+                            data-zh="→ 供应商/生态系统地图">→ Supplier / Ecosystem Map</li>
+                    </ul>
+                </div>
+                <a style="font-size:12px;color:var(--accent);text-decoration:none;letter-spacing:.06em"
+                    href="https://festival.retail-jeweller.com/2026/en/page/home" target="_blank"
+                    data-en="View Festival →" data-zh="查看展会 →">View Festival →</a>
+            </div>
+        </div>
+
+        <div class="hl-scroller">
+            <!-- London Retail -->
+            <div class="hl-card"
+                onclick="openLightbox('monica_vinader.jpg', 'London Retail Reality', 'DTC store experience & conversion dynamics.')">
+                <div class="hl-img"><img src="monica_vinader.jpg" alt="Monica Vinader Store" /></div>
+                <div class="hl-info">
+                    <div class="hl-title" data-en="London Retail Reality" data-zh="伦敦零售现实">London Retail Reality</div>
+                    <div class="hl-desc" data-en="Store-to-Ecom conversion signals" data-zh="门店至电商转化信号">Store-to-Ecom
+                        conversion signals</div>
+                </div>
+            </div>
+            <!-- Birmingham -->
+            <div class="hl-card" onclick="window.open('https://www.thejewelleryquarter.org/','_blank')">
+                <div class="hl-img"><img src="jq_workshop.jpg" alt="Jewellery Quarter Workshop" /></div>
+                <div class="hl-info">
+                    <div class="hl-title" data-en="Birmingham Jewellery Quarter" data-zh="伯明翰珠宝区">Birmingham Jewellery
+                        Quarter</div>
+                    <div class="hl-desc" data-en="Heritage makers & innovation hub →" data-zh="历史名店与创新枢纽 →">Heritage
+                        makers & innovation hub →</div>
+                </div>
+            </div>
+            <!-- Jewelry Design -->
+            <div class="hl-card"
+                onclick="openLightbox('jewelry_design.jpg', 'Product Development', 'Design & collaboration possibilities.')">
+                <div class="hl-img"><img src="jewelry_design.jpg" alt="Jewelry Design" /></div>
+                <div class="hl-info">
+                    <div class="hl-title" data-en="Product Design Reality" data-zh="产品设计现状">Product Design Reality</div>
+                    <div class="hl-desc" data-en="Craftsmanship & collaboration" data-zh="工艺技法与合作方向">Craftsmanship &
+                        collaboration</div>
+                </div>
+            </div>
+            <!-- SF Express -->
+            <div class="hl-card"
+                onclick="openLightbox('sf_express.jpg', 'SF Express', 'Heathrow warehouse security audit.')">
+                <div class="hl-img"><img src="sf_express.jpg" alt="SF Express" /></div>
+                <div class="hl-info">
+                    <div class="hl-title" data-en="SF Express" data-zh="顺丰速运">SF Express</div>
+                    <div class="hl-desc" data-en="Heathrow security audit" data-zh="希思罗安全审计">Heathrow security audit
+                    </div>
+                </div>
+            </div>
+            <!-- Goodcang -->
+            <div class="hl-card"
+                onclick="openLightbox('goodcang.jpg', 'Goodcang', 'Birmingham warehouse flow mapping.')">
+                <div class="hl-img"><img src="goodcang.jpg" alt="Goodcang Warehouse" /></div>
+                <div class="hl-info">
+                    <div class="hl-title" data-en="Goodcang" data-zh="谷仓海外仓">Goodcang</div>
+                    <div class="hl-desc" data-en="Birmingham flow mapping" data-zh="伯明翰动线审计">Birmingham flow mapping
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISITS -->
+    <section id="visits">
+        <div class="section-label" data-en="Interviews & Field Audits" data-zh="访谈与实地审计">Interviews & Field Audits</div>
+        <h2 class="section-title" data-en="Visits" data-zh="考察地点">Visits</h2>
+
+        <div class="v-tabs">
+            <button class="subtab active" data-vtab="store" data-en="Store Visits" data-zh="店铺走访">Store Visits</button>
+            <button class="subtab" data-vtab="platform" data-en="Platform" data-zh="平台">Platform</button>
+            <button class="subtab" data-vtab="compl" data-en="Compliance" data-zh="合规">Compliance</button>
+            <button class="subtab" data-vtab="wh" data-en="Warehouse" data-zh="仓储">Warehouse</button>
+        </div>
+
+        <!-- STORES -->
+        <div class="subpanel active" id="v-store" style="padding:0;border:none;background:transparent">
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
+                        <div class="vc-name">Mejuri</div>
+                    </div>
+                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
+                            data-zh="已确认">Confirmed</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text);line-height:1.6">E-com retention loop, visual
+                                merchandising mapping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
+                        <div class="vc-name">Missoma</div>
+                    </div>
+                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
+                            data-zh="已确认">Confirmed</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text);line-height:1.6">Positioning modules, price
+                                ladder strategy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
+                        <div class="vc-name">Astrid & Miyu</div>
+                    </div>
+                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
+                            data-zh="已确认">Confirmed</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text);line-height:1.6">Experience checklist &
+                                conversion cues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
+                        <div class="vc-name">Monica Vinader</div>
+                    </div>
+                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
+                            data-zh="已确认">Confirmed</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text);line-height:1.6">Materials messaging boundaries
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
+                        <div class="vc-name">Liberty</div>
+                    </div>
+                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
+                            data-zh="已确认">Confirmed</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text);line-height:1.6">Department store jewelry display
+                                & curation model</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLATFORM -->
+        <div class="subpanel" id="v-platform" style="padding:0;border:none;background:transparent">
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                            </svg><span data-en="Platform" data-zh="平台">Platform</span></div>
+                        <div class="vc-name">Shopify UK Enterprise</div>
+                    </div>
+                    <div class="vc-status pending"><span class="dot"></span><span data-en="Pending"
+                            data-zh="待确认">Pending</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div><label
+                                style="font-size:10px;text-transform:uppercase;color:var(--sub);margin-bottom:8px;display:block">Questions</label>
+                            <p style="font-size:14px;color:var(--text);line-height:1.6">• Integration with UK VAT
+                                mechanisms?<br>• Best-in-class local fulfillment apps?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPLIANCE -->
+        <div class="subpanel" id="v-compl" style="padding:0;border:none;background:transparent">
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <path d="M12 2L22 12 12 22 2 12Z" />
+                            </svg><span data-en="Company Compliance" data-zh="公司合规">Company Compliance</span></div>
+                        <div class="vc-name">AVASK</div>
+                    </div>
+                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
+                            data-zh="已确认">Confirmed</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text)">VAT / EPR / Import Entity structuring
+                                strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8v4l3 3" />
+                            </svg><span data-en="Product Compliance" data-zh="产品合规">Product Compliance</span></div>
+                        <div class="vc-name">UK Assay Office Guidance</div>
+                    </div>
+                    <div class="vc-status optional"><span class="dot"></span><span data-en="Optional"
+                            data-zh="可选">Optional</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text)">Hallmarking, heavy metals claims, local
+                                authority standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WAREHOUSE -->
+        <div class="subpanel" id="v-wh" style="padding:0;border:none;background:transparent">
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <path d="M4 10v10h16V10M2 10l10-7 10 7M10 20v-6h4v6" />
+                            </svg><span data-en="Warehouse" data-zh="仓储">Warehouse</span></div>
+                        <div class="vc-name" data-en="SF Express (London)" data-zh="顺丰（伦敦）">SF Express (London)</div>
+                    </div>
+                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
+                            data-zh="已确认">Confirmed</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text)"
+                                data-en="Security audit: CCTV, locked cages, access control for high-value items."
+                                data-zh="安全审计：闭路电视、锁笼、高价值物品的门禁控制。">Security audit: CCTV, locked cages, access control
+                                for high-value items.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vcard">
+                <div class="vc-head">
+                    <div>
+                        <div class="v-scope"><svg viewBox="0 0 24 24">
+                                <path d="M4 10v10h16V10M2 10l10-7 10 7M10 20v-6h4v6" />
+                            </svg><span data-en="Warehouse" data-zh="仓储">Warehouse</span></div>
+                        <div class="vc-name" data-en="Goodcang (Birmingham)" data-zh="谷仓（伯明翰）">Goodcang (Birmingham)
+                        </div>
+                    </div>
+                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
+                            data-zh="已确认">Confirmed</span></div>
+                    <div class="vc-chevron">▾</div>
+                </div>
+                <div class="vc-body">
+                    <div class="vc-grid">
+                        <div>
+                            <p style="font-size:14px;color:var(--text)"
+                                data-en="Inventory flow: pick-pack routing, Shopify/WMS integration, stock control."
+                                data-zh="库存动线：分拣打包动线、Shopify/WMS集成、盘点控制。">Inventory flow: pick-pack routing, Shopify/WMS
+                                integration, stock control.</p>
+                            <div style="margin-top:12px">
+                                <img src="gucang.png" alt="Goodcang warehouse"
+                                    onclick="openLightbox('gucang.png','Goodcang Footprint','Birmingham warehouse physical layout.')"
+                                    style="width:100%;border-radius:4px;cursor:pointer" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <div class="lb-content">
+            <button class="lb-close" id="lbClose">✕</button>
+            <img class="lb-img" id="lbImg" src="" alt="" />
+            <div class="lb-text">
+                <h3 id="lbTitle"></h3>
+                <p id="lbDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CLOSING & NEXT STEPS -->
+    <section class="closing" id="closing">
+        <div class="closing-inner">
+            <div class="stepper">
+                <div class="step active"
+                    style="border-left:3px solid #1F33FF;padding-left:20px;background:rgba(31,51,255,.04);border-radius:8px">
+                    <div class="st-num">1</div>
+                    <div class="st-text">
+                        <h4 data-en="Approve Scope & Budget" data-zh="核准范围与预算">Approve Scope & Budget</h4>
+                        <p data-en="Final sign-off on objectives and estimated costs." data-zh="确认调研目标及预估预算。">Final
+                            sign-off on objectives and estimated costs.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="st-num">2</div>
+                    <div class="st-text">
+                        <h4 data-en="Book Flights & Accommodation" data-zh="预定机票与酒店">Book Flights & Accommodation</h4>
+                        <p data-en="Secure rates for logistics." data-zh="锁定差旅成本。">Secure rates for logistics.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="st-num">3</div>
+                    <div class="st-text">
+                        <h4 data-en="Confirm Meetings" data-zh="确定访谈邀约">Confirm Meetings</h4>
+                        <p data-en="Finalize calendars for pending visits." data-zh="最终落实待定预约名单。">Finalize calendars for
+                            pending visits.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="st-num">4</div>
+                    <div class="st-text">
+                        <h4 data-en="Execute Field Study" data-zh="执行实地考察">Execute Field Study</h4>
+                        <p data-en="Data gathering across all nodes." data-zh="依照规划采集各类核心数据。">Data gathering across all
+                            nodes.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="st-num">5</div>
+                    <div class="st-text">
+                        <h4 data-en="Deliver Recommendation" data-zh="递交决策建议">Deliver Recommendation</h4>
+                        <p data-en="Evidence-backed Go / Lean Test / No-Go strategy."
+                            data-zh="输出以事实为基准的 Go/Lean Test/No-Go 策略方案。">Evidence-backed Go / Lean Test / No-Go
+                            strategy.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:40px;text-align:center">
+                <a href="#hero" class="pill-link"
+                    style="margin-right:16px;background:transparent;color:var(--sub);border-color:var(--line)"
+                    data-en="Back to Cover" data-zh="返回封面">Back to Cover</a>
+                <button class="pill-link" id="approveBtn"
+                    style="border:none;background:var(--accent);color:#fff;cursor:pointer;font-family:var(--sans)"
+                    data-en="Approve Next Steps →" data-zh="核准启动 →">Approve Next Steps →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script>
+        /* LANG */
+        let lang = 'en'; const langBtn = document.getElementById('langToggle');
+        function setLang(l) {
+            lang = l; langBtn.textContent = l === 'en' ? '中' : 'EN'; document.body.classList.toggle('lang-zh', l === 'zh');
+            document.querySelectorAll('[data-en][data-zh]').forEach(el => { const t = el.getAttribute('data-' + l); if (t) { if (el.innerHTML.includes('<br>')) el.innerHTML = t; else el.textContent = t; } });
+        }
+        langBtn.addEventListener('click', () => setLang(lang === 'en' ? 'zh' : 'en'));
+
+        /* HERO LOC HOVER — pins stay blue rings, hover only enhances glow+size */
+        const locs = document.querySelectorAll('.hm-loc');
+        locs.forEach(loc => {
+            loc.addEventListener('mouseenter', () => {
+                loc.classList.add('active');
+                const pin = document.getElementById('pin-' + loc.dataset.pin);
+                if (pin) {
+                    pin.setAttribute('r', pin.id === 'pin-lnd' ? '9' : '7');
+                    pin.setAttribute('filter', 'url(#pinGlowHover)');
+                }
+            });
+            loc.addEventListener('mouseleave', () => {
+                loc.classList.remove('active');
+                const pin = document.getElementById('pin-' + loc.dataset.pin);
+                if (pin) {
+                    pin.setAttribute('r', pin.id === 'pin-lnd' ? '6' : '5');
+                    pin.setAttribute('filter', 'url(#pinGlow)');
+                }
+            });
+        });
+
+        /* RAIL CLICK — scrollIntoView + lockActive 1200ms */
+        let railLocked = false;
+        document.querySelectorAll('.rail-node').forEach(n => {
+            n.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                railLocked = true;
+                document.querySelectorAll('.rail-node').forEach(x => x.classList.remove('active'));
+                n.classList.add('active');
+                const mod = document.getElementById(n.dataset.target);
+                if (mod) mod.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setTimeout(() => { railLocked = false; }, 1200);
+            });
+        });
+
+        /* PLAN SUBTABS */
+        document.querySelectorAll('.module').forEach(mod => {
+            const tabs = mod.querySelectorAll('.subtab[data-panel]');
+            tabs.forEach(t => {
+                t.addEventListener('click', () => {
+                    mod.querySelectorAll('.subtab').forEach(x => x.classList.remove('active'));
+                    t.classList.add('active');
+                    mod.querySelectorAll('.subpanel').forEach(p => p.classList.remove('active'));
+                    document.getElementById(t.dataset.panel).classList.add('active');
+                });
+            });
+        });
+
+        /* VISITS TABS */
+        document.querySelectorAll('.v-tabs .subtab').forEach(t => {
+            t.addEventListener('click', () => {
+                document.querySelectorAll('.v-tabs .subtab').forEach(x => x.classList.remove('active'));
+                t.classList.add('active');
+                document.getElementById('visits').querySelectorAll('.subpanel').forEach(p => p.classList.remove('active'));
+                document.getElementById('v-' + t.dataset.vtab).classList.add('active');
+            });
+        });
+
+        /* VISIT ACCORDION */
+        document.querySelectorAll('.vc-head').forEach(h => {
+            h.addEventListener('click', () => {
+                const panel = h.closest('.subpanel');
+                panel.querySelectorAll('.vcard').forEach(c => { if (c !== h.parentElement) c.classList.remove('open'); });
+                h.parentElement.classList.toggle('open');
+            });
+        });
+
+        /* LIGHTBOX */
+        const lb = document.getElementById('lightbox'), lbI = document.getElementById('lbImg'), lbT = document.getElementById('lbTitle'), lbD = document.getElementById('lbDesc');
+        function openLightbox(src, title, desc) {
+            if (!src) return;
+            lbI.src = src; lbT.textContent = title; lbD.textContent = desc;
+            lb.classList.add('show');
+        }
+        document.getElementById('lbClose').addEventListener('click', () => lb.classList.remove('show'));
+        lb.addEventListener('click', e => { if (e.target === lb) lb.classList.remove('show'); });
+
+        /* SCROLL-SPY — IntersectionObserver, threshold 0.6, respects lockActive */
+        const railNodes = document.querySelectorAll('.rail-node');
+        const railMap = {};
+        railNodes.forEach(n => { railMap[n.dataset.target] = n; });
+        const obsCallback = (entries) => {
+            if (railLocked) return;
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+                    railNodes.forEach(n => n.classList.remove('active'));
+                    const node = railMap[entry.target.id];
+                    if (node) node.classList.add('active');
+                }
+            });
+        };
+        const obs = new IntersectionObserver(obsCallback, { threshold: [0.6] });
+        document.querySelectorAll('.module').forEach(m => obs.observe(m));
+
+        /* ACCENT PHRASE — trigger animation on first view */
+        const apObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); apObs.unobserve(e.target); } });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.accent-phrase').forEach(el => apObs.observe(el));
+
+        /* APPROVE EVENT */
+        document.getElementById('approveBtn').addEventListener('click', () => {
+            alert(lang === 'en' ? 'Next Steps Approved! Starting process...' : '下一步已核准！开始流程...');
+        });
+    </script>
+</body>
+
+</html>
