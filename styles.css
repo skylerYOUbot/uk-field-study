@@ -1182,3 +1182,15 @@ section{ padding-left:var(--page-pad); padding-right:var(--page-pad); }
   .nav-links a{ display:none; } /* keep header clean */
   .nav{ justify-content:space-between; }
 }
+@media (max-width: 960px){
+  /* Highlights 顶部 Festival 大卡片：强制单列 */
+  #highlights .hl-feature{
+    grid-template-columns: 1fr !important;
+  }
+  #highlights .hl-feature > div:first-child{
+    min-height: 240px;
+  }
+  #highlights .hl-feature > div:last-child{
+    padding: 24px !important;
+  }
+}
