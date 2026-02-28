@@ -766,7 +766,13 @@
         let lang = 'en'; const langBtn = document.getElementById('langToggle');
         function setLang(l) {
             lang = l; langBtn.textContent = l === 'en' ? '中' : 'EN'; document.body.classList.toggle('lang-zh', l === 'zh');
-            document.querySelectorAll('[data-en][data-zh]').forEach(el => { const t = el.getAttribute('data-' + l); if (t) { if (el.innerHTML.includes('<br>')) el.innerHTML = t; else el.textContent = t; } });
+            document.querySelectorAll('[data-en][data-zh]').forEach(el => {
+                const t = el.getAttribute('data-' + l);
+                if (!t) return;
+                const containsHtml = /<[^>]+>/.test(t);
+                if (containsHtml) el.innerHTML = t;
+                else el.textContent = t;
+            });
         }
         langBtn.addEventListener('click', () => setLang(lang === 'en' ? 'zh' : 'en'));
 
