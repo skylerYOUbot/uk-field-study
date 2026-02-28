@@ -1226,6 +1226,68 @@ section {
   color: var(--sub)
 }
 
+
+/* BUDGET ROWS */
+.budget-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.budget-row {
+  display: grid;
+  grid-template-columns: minmax(170px, 1.25fr) minmax(220px, 3fr) auto;
+  align-items: center;
+  gap: 14px;
+}
+
+.br-label {
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.br-bar-wrap {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(26, 26, 26, .08);
+  overflow: hidden;
+}
+
+.br-bar {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.br-amt {
+  font-size: 13px;
+  letter-spacing: .04em;
+  color: var(--sub);
+  white-space: nowrap;
+}
+
+.budget-total {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.budget-total-amt {
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: .04em;
+}
+
 /* BUDGET OVERLAY */
 .approve-modal {
   position: fixed;
@@ -1363,6 +1425,29 @@ section {
 
   .visit-row-detail.open {
     padding: 18px;
+  }
+
+  .budget-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .br-label {
+    font-size: 11px;
+  }
+
+  .br-amt {
+    text-align: right;
+  }
+
+  .budget-total {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .budget-total>span:first-child {
+    width: 100%;
+    text-align: right;
   }
 }
 
