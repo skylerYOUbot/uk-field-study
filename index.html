@@ -101,10 +101,11 @@
             entry within 6–12 months.
         </div>
         <div class="purpose-output">
-            <div data-en="Output:" data-zh="输出:">Output:</div>
-            <span data-en="Go / Lean Test / No-Go" data-zh="执行 / 精益测试 / 不执行">Go / Lean Test / No-Go</span>
-            <div style="margin-top:18px;font-size:clamp(16px,1.6vw,20px);letter-spacing:.02em"
-                data-en="Evidence-backed recommendation." data-zh="由证据支撑的建议。">Evidence-backed recommendation.</div>
+            <div class="purpose-output-main">
+                <div data-en="Output:" data-zh="输出:">Output:</div>
+                <span data-en="Go / Lean Test / No-Go" data-zh="执行 / 精益测试 / 不执行">Go / Lean Test / No-Go</span>
+            </div>
+            <div class="purpose-output-note" data-en="Evidence-backed recommendation." data-zh="由证据支撑的建议。">Evidence-backed recommendation.</div>
         </div>
     </section>
 
@@ -172,16 +173,15 @@
                 <div class="sp-test">
                     <label data-en="Questions to test" data-zh="测试问题">Questions to test</label>
                     <ul>
-                        <li data-en="How is price ladder communicated?" data-zh="价格阶梯如何传达？">How is price ladder
-                            communicated?</li>
-                        <li data-en="What are the post-purchase retention hooks?" data-zh="购买后的留存抓手为何？">What are the
-                            post-purchase retention hooks?</li>
+                        <li data-en="How is value encoded through visual hierarchy and spatial design?" data-zh="价值如何通过视觉层级与空间设计被编码？">How is value encoded through visual hierarchy and spatial design?</li>
+                        <li data-en="How is price architecture structured and escalated?" data-zh="价格架构如何被构建并逐级抬升？">How is price architecture structured and escalated?</li>
+                        <li data-en="What mechanisms sustain conversion beyond first purchase?" data-zh="哪些机制在首次购买后持续驱动转化？">What mechanisms sustain conversion beyond first purchase?</li>
                     </ul>
                 </div>
                 <!-- Hidden until expanded or visible inside -->
                 <div class="sp-out">
                     <label data-en="Output" data-zh="产出">Output</label>
-                    <span data-en="DTC Experience Checklist" data-zh="DTC体验清单">DTC Experience Checklist</span>
+                    <span data-en="DTC Structural Experience Map" data-zh="DTC结构化体验地图">DTC Structural Experience Map</span>
                 </div>
                 <div class="sp-ev">
                     <div class="sp-ev-box"
@@ -208,16 +208,14 @@
                 <div class="sp-test">
                     <label data-en="What we look for" data-zh="我们寻找什么">What we look for</label>
                     <ul>
-                        <li data-en="Sustainability and material trends" data-zh="可持续性与材料趋势">Sustainability and material
-                            trends</li>
-                        <li data-en="Exhibitor brand positioning strategies" data-zh="参展商的品牌定位策略">Exhibitor brand
-                            positioning strategies</li>
+                        <li data-en="Identify material and sustainability trends shaping near-term demand" data-zh="识别塑造短期需求的材料与可持续趋势">Identify material and sustainability trends shaping near-term demand</li>
+                        <li data-en="Decode how leading brands structure positioning through product and pricing" data-zh="解析头部品牌如何通过产品与定价构建定位">Decode how leading brands structure positioning through product and pricing</li>
+                        <li data-en="Establish direct connections with relevant suppliers and industry actors" data-zh="建立与相关供应商及产业参与者的直接连接">Establish direct connections with relevant suppliers and industry actors</li>
                     </ul>
                 </div>
                 <div class="sp-out">
                     <label data-en="Output" data-zh="产出">Output</label>
-                    <span data-en="Festival Signal Log & Ecosystem Map" data-zh="展会信号日志与生态图">Festival Signal Log &
-                        Ecosystem Map</span>
+                    <span data-en="Festival Signal Log<br>Supplier Shortlist & Structure Map" data-zh="展会信号日志<br>供应商短名单与结构图">Festival Signal Log<br>Supplier Shortlist & Structure Map</span>
                 </div>
                 <a href="#highlights" class="pill-link" data-en="See Festival →" data-zh="查看展会 →">See Festival →</a>
             </div>
@@ -253,7 +251,7 @@
                     <span data-en="Partner Shortlist + IP Options" data-zh="合作伙伴短名单+知识产权选项">Partner Shortlist + IP
                         Options</span>
                 </div>
-                <a href="#highlights" class="pill-link" data-en="See Jewellery Quarter →" data-zh="查看珠宝区 →">See
+                <a href="https://www.birmingham-jewellery-quarter.net/" target="_blank" class="pill-link" data-en="See Jewellery Quarter →" data-zh="查看珠宝区 →">See
                     Jewellery Quarter →</a>
             </div>
         </div>
@@ -283,7 +281,7 @@
                 </div>
                 <div class="sp-out">
                     <label data-en="Output" data-zh="产出">Output</label>
-                    <span data-en="Compliance Gate R/A/G" data-zh="合规门禁 R/A/G">Compliance Gate R/A/G</span>
+                    <span data-en="Compliance Gate: Ready / Conditional / Blocked" data-zh="合规门禁：就绪 / 有条件 / 阻断">Compliance Gate: Ready / Conditional / Blocked</span>
                 </div>
                 <a href="#highlights" class="pill-link" data-en="See Assurance Notes →" data-zh="查看保证要求 →">See Assurance
                     Notes →</a>
@@ -426,15 +424,24 @@
 
     <div style="margin-bottom:20px">
       <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--sub);margin-bottom:6px"
-           data-en="What We Take Away"
-           data-zh="我们要带走什么">
-        What We Take Away
+           data-en="What We Look For"
+           data-zh="我们关注什么">
+        What We Look For
       </div>
 
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:13px;padding:4px 0;color:var(--text);">→ Festival Signal Log</li>
-        <li style="font-size:13px;padding:4px 0;color:var(--text);">→ Leads Shortlist (cards + follow-up)</li>
-        <li style="font-size:13px;padding:4px 0;color:var(--text);">→ Supplier / Ecosystem Map</li>
+        <li style="font-size:13px;padding:4px 0;color:var(--text);">→ Identify material and sustainability trends shaping near-term demand</li>
+        <li style="font-size:13px;padding:4px 0;color:var(--text);">→ Decode how leading brands structure positioning through product and pricing</li>
+        <li style="font-size:13px;padding:4px 0;color:var(--text);">→ Establish direct connections with relevant suppliers and industry actors</li>
+      </ul>
+      <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--sub);margin:14px 0 6px;"
+           data-en="Output"
+           data-zh="产出">
+        Output
+      </div>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:13px;padding:4px 0;color:var(--text);">Festival Signal Log</li>
+        <li style="font-size:13px;padding:4px 0;color:var(--text);">Supplier Shortlist & Structure Map</li>
       </ul>
     </div>
 
@@ -459,13 +466,26 @@
                 </div>
             </div>
             <!-- Birmingham -->
-            <div class="hl-card" onclick="window.open('https://www.thejewelleryquarter.org/','_blank')">
+            <div class="hl-card hl-expand" id="jqCard">
                 <div class="hl-img"><img src="jq_workshop.jpg" alt="Jewellery Quarter Workshop" /></div>
                 <div class="hl-info">
-                    <div class="hl-title" data-en="Birmingham Jewellery Quarter" data-zh="伯明翰珠宝区">Birmingham Jewellery
-                        Quarter</div>
-                    <div class="hl-desc" data-en="Heritage makers & innovation hub →" data-zh="历史名店与创新枢纽 →">Heritage
-                        makers & innovation hub →</div>
+                    <div class="hl-title" data-en="Birmingham Jewellery Quarter" data-zh="伯明翰珠宝区">Birmingham Jewellery Quarter</div>
+                    <div class="hl-desc" data-en="UK’s historic jewellery production cluster" data-zh="英国历史珠宝生产集群">UK’s historic jewellery production cluster</div>
+                </div>
+                <div class="hl-detail">
+                    <h4>Birmingham Jewellery Quarter</h4>
+                    <p class="hl-subtitle">UK’s Historic Jewellery Production Cluster</p>
+                    <div class="hl-detail-block">Strategic Relevance</div>
+                    <ul>
+                        <li>Dense concentration of specialist makers, bench capability, and production know-how.</li>
+                        <li>Live view of how craftsmanship, quality control, and batching are operationalized.</li>
+                    </ul>
+                    <div class="hl-detail-block">What This Means For Our Study</div>
+                    <ul>
+                        <li>Clarifies realistic collaboration formats with UK-based production partners.</li>
+                        <li>Improves feasibility assumptions for lead time, sampling cadence, and launch readiness.</li>
+                    </ul>
+                    <a href="https://www.thejewelleryquarter.org/" target="_blank" class="hl-detail-link">Visit Official Site →</a>
                 </div>
             </div>
             <!-- Jewelry Design -->
@@ -515,110 +535,28 @@
 
         <!-- STORES -->
         <div class="subpanel active" id="v-store" style="padding:0;border:none;background:transparent">
-            <div class="vcard">
-                <div class="vc-head">
-                    <div>
-                        <div class="v-scope"><svg viewBox="0 0 24 24">
-                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
-                        <div class="vc-name">Mejuri</div>
-                    </div>
-                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
-                            data-zh="已确认">Confirmed</span></div>
-                    <div class="vc-chevron">▾</div>
-                </div>
-                <div class="vc-body">
-                    <div class="vc-grid">
-                        <div>
-                            <p style="font-size:14px;color:var(--text);line-height:1.6">E-com retention loop, visual
-                                merchandising mapping</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="visit-group">
+                <div class="visit-group-title">DTC STORES</div>
+                <div class="visit-grid-head"><span>Brand</span><span>Channel</span><span>Status</span></div>
+                <div class="visit-row"><div class="visit-brand">Mejuri</div><div class="visit-channel">DTC</div><div class="visit-status confirmed"><span class="dot"></span><span>Confirmed</span></div></div>
+                <div class="visit-row"><div class="visit-brand">Missoma</div><div class="visit-channel">DTC</div><div class="visit-status confirmed"><span class="dot"></span><span>Confirmed</span></div></div>
+                <div class="visit-row"><div class="visit-brand">Astrid & Miyu</div><div class="visit-channel">DTC</div><div class="visit-status confirmed"><span class="dot"></span><span>Confirmed</span></div></div>
+                <div class="visit-row"><div class="visit-brand">Monica Vinader</div><div class="visit-channel">DTC</div><div class="visit-status confirmed"><span class="dot"></span><span>Confirmed</span></div></div>
             </div>
-            <div class="vcard">
-                <div class="vc-head">
-                    <div>
-                        <div class="v-scope"><svg viewBox="0 0 24 24">
-                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
-                        <div class="vc-name">Missoma</div>
-                    </div>
-                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
-                            data-zh="已确认">Confirmed</span></div>
-                    <div class="vc-chevron">▾</div>
+
+            <div class="visit-group">
+                <div class="visit-group-title">DEPARTMENT STORES</div>
+                <div class="visit-grid-head"><span>Brand</span><span>Channel</span><span>Status</span></div>
+                <div class="visit-row visit-row-expand" id="libertyRow">
+                    <div class="visit-brand">Liberty</div>
+                    <div class="visit-channel">Department</div>
+                    <div class="visit-status confirmed"><span class="dot"></span><span>Confirmed</span></div>
                 </div>
-                <div class="vc-body">
-                    <div class="vc-grid">
-                        <div>
-                            <p style="font-size:14px;color:var(--text);line-height:1.6">Positioning modules, price
-                                ladder strategy</p>
-                        </div>
-                    </div>
+                <div class="visit-row-detail" id="libertyDetail">
+                    <p>Department-store jewellery floor curation, brand adjacency logic, and assortment hierarchy benchmarking.</p>
                 </div>
-            </div>
-            <div class="vcard">
-                <div class="vc-head">
-                    <div>
-                        <div class="v-scope"><svg viewBox="0 0 24 24">
-                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
-                        <div class="vc-name">Astrid & Miyu</div>
-                    </div>
-                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
-                            data-zh="已确认">Confirmed</span></div>
-                    <div class="vc-chevron">▾</div>
-                </div>
-                <div class="vc-body">
-                    <div class="vc-grid">
-                        <div>
-                            <p style="font-size:14px;color:var(--text);line-height:1.6">Experience checklist &
-                                conversion cues</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="vcard">
-                <div class="vc-head">
-                    <div>
-                        <div class="v-scope"><svg viewBox="0 0 24 24">
-                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
-                        <div class="vc-name">Monica Vinader</div>
-                    </div>
-                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
-                            data-zh="已确认">Confirmed</span></div>
-                    <div class="vc-chevron">▾</div>
-                </div>
-                <div class="vc-body">
-                    <div class="vc-grid">
-                        <div>
-                            <p style="font-size:14px;color:var(--text);line-height:1.6">Materials messaging boundaries
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="vcard">
-                <div class="vc-head">
-                    <div>
-                        <div class="v-scope"><svg viewBox="0 0 24 24">
-                                <path d="M4 8v12h16V8M2 8l10-5 10 5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg><span data-en="Store Visits" data-zh="店铺走访">Store Visits</span></div>
-                        <div class="vc-name">Liberty</div>
-                    </div>
-                    <div class="vc-status confirmed"><span class="dot"></span><span data-en="Confirmed"
-                            data-zh="已确认">Confirmed</span></div>
-                    <div class="vc-chevron">▾</div>
-                </div>
-                <div class="vc-body">
-                    <div class="vc-grid">
-                        <div>
-                            <p style="font-size:14px;color:var(--text);line-height:1.6">Department store jewelry display
-                                & curation model</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="visit-row"><div class="visit-brand">Selfridges</div><div class="visit-channel">Department</div><div class="visit-status confirmed"><span class="dot"></span><span>Confirmed</span></div></div>
+                <div class="visit-row"><div class="visit-brand">Harrods</div><div class="visit-channel">Department</div><div class="visit-status confirmed"><span class="dot"></span><span>Confirmed</span></div></div>
             </div>
         </div>
 
@@ -898,6 +836,15 @@
                 panel.querySelectorAll('.vcard').forEach(c => { if (c !== h.parentElement) c.classList.remove('open'); });
                 h.parentElement.classList.toggle('open');
             });
+        });
+
+        document.getElementById('jqCard')?.addEventListener('click', () => {
+            document.getElementById('jqCard').classList.toggle('open');
+        });
+
+        document.getElementById('libertyRow')?.addEventListener('click', () => {
+            document.getElementById('libertyDetail').classList.toggle('open');
+            document.getElementById('libertyRow').classList.toggle('open');
         });
 
         /* LIGHTBOX */
